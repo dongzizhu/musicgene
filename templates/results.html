@@ -1,0 +1,48 @@
+<html>
+  <style>
+    body{ 
+      font-size: 15pt;
+      font-family: arial;
+    }
+  </style>
+
+  <style>
+    .table {
+      border-style: groove;
+      border: 5 px solid black;
+      border-spacing: 0;
+      margin: 1rem;
+      background-color: #f5f5f5;
+    }
+
+    .table__row:nth-child(even){
+      background-color: #c89cff;
+
+    }
+    .table__cell{
+      padding: 8px;
+    }
+  </style>
+
+
+<body style = "margin: 30px;">
+  <h1>Query Results</h1>
+
+  <table class="table">
+    {% for row in data %}
+    <tr class="table__row">
+      {% for value in row %}
+      <td class="table__cell">{{value}}</td>
+      {% endfor %}
+    </tr>
+    {% endfor %}
+  </table>
+
+
+<p><a href="/">Go Back</a></p>
+
+
+</body>
+
+
+</html>

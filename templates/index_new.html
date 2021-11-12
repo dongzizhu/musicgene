@@ -1,0 +1,73 @@
+<html>
+  <style>
+    /*.dropdown {
+      display:  inline-block;
+      position: var(<p>Enter text: <input type="text" name="input"></p>);*/
+   /* }*/
+    .myDiv {
+      border: 5px outset blueviolet;
+      background-color: lightskyblue;
+      text-align: center;
+      text-decoration-color: black;
+    }
+    body{ 
+      font-size: 15pt;
+      font-family: arial;
+    }
+  </style>
+
+
+<body>
+  <font color="black">
+  <h1 style = "text-align: center;">
+  MusicGene
+  </h1>
+  <div class = "myDiv">
+    <p> Look up for your favorite songs using the song name, movie, singer, company or the band!
+    </p>
+  </div>
+  <div class="container">
+    <form method="POST" action="/results">
+      <p>Enter text: <input type="text" name="input"></p>
+      <label for ="input_type">What did you enter?</label>
+        <select name="input_type" id = "input_type">
+          <option value = "none" selected disabled hidden>Select an option</option>         
+          <option value = "Singer">Singer</option>
+          <option value = "Band">Band</option>
+          <option value = "Company">Company</option>
+          <option value = "Song">Song</option>
+          <option value = "Movie">Movie</option>
+          <option value = "Album">Album</option>
+          <option value = "ThemeSong">ThemeSong</option>
+        </select>
+
+              <br />
+              <br />
+
+
+      <label for ="search_type">What are you looking for?</label>
+        <select name="search_type" id = "search_type">
+          <option value = "none" selected disabled hidden>Select an option</option>
+          <option value = "Singer">Singer</option>
+          <option value = "Band">Band</option>
+          <option value = "Company">Company</option>
+          <option value = "Song">Song</option>
+          <option value = "Movie">Movie</option>
+          <option value = "Album">Album</option>
+          <option value = "ThemeSong">ThemeSong</option>
+        </select>
+
+        <br />
+        <br />
+
+
+      <button type ="Search" value="Search">Search</button>
+      
+  </form>
+  </div>
+</font>
+
+<p><a href="another">Go to the other page</a></p>
+
+</body>
+</html>
